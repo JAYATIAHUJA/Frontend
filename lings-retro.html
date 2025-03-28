@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lings Retro Cars</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="lings-styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body class="retro-bg">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">LINGS CARS</div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Particle Effect -->
+    <div id="particles-js"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark neon-nav fixed-top">
+        <div class="container">
+            <a href="">
+                <img src="https://cms.motorcomplete.co.uk/media/ie5jgndz/lings-logo.png?width=400&amp;quality=100&amp;mode=max&amp;scale=both" alt="Lings Cars" itemprop="logo" class="header__logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link neon-text" href="#deals">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link neon-text" href="#electric">Electric</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link neon-text" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container text-center">
+            <div class="pixel-border">
+                <h1 class="neon-text display-1">LINGS RETRO CARS</h1>
+                <p class="neon-text">Where Retro Meets Modern Wheels</p>
+            </div>
+            <div class="retro-grid"></div>
+        </div>
+    </section>
+
+    <!-- Featured Deals Section -->
+    <section id="deals" class="deals-section">
+        <div class="container">
+            <h2 class="text-center neon-text mb-5">Hot Deals</h2>
+            <div class="row">
+                <!-- Deal Card 1 -->
+                <div class="col-md-4">
+                    <div class="deal-card" id="deal1">
+                        <div class="card-content">
+                            <div class="pixel-frame">
+                                <img src="img1.jpg" alt="Car Deal 1" class="img-fluid">
+                            </div>
+                            <h3 class="neon-text">BYD Sealion 7</h3>
+                            <p class="retro-text">Special Lease Deal!</p>
+                            <button class="retro-btn">View Deal</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deal Card 2 -->
+                <div class="col-md-4">
+                    <div class="deal-card" id="deal2">
+                        <div class="card-content">
+                            <div class="pixel-frame">
+                                <img src="img2.jpg" alt="Car Deal 2" class="img-fluid">
+                            </div>
+                            <h3 class="neon-text">Volkswagen T-Roc</h3>
+                            <p class="retro-text">Limited Time Offer!</p>
+                            <button class="retro-btn">View Deal</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deal Card 3 -->
+                <div class="col-md-4">
+                    <div class="deal-card" id="deal3">
+                        <div class="card-content">
+                            <div class="pixel-frame">
+                                <img src="img3.jpg" alt="Car Deal 3" class="img-fluid">
+                            </div>
+                            <h3 class="neon-text">MG4 EV</h3>
+                            <p class="retro-text">Electric Special!</p>
+                            <button class="retro-btn">View Deal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electric Section -->
+    <section id="electric" class="electric-section">
+        <div class="container">
+            <div class="pixel-border">
+                <h2 class="text-center neon-text mb-4">Electric Revolution</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="retro-text">⚡ Switch to electric car leasing and enjoy zero emissions, lower costs, and instant power!</p>
+                        <p class="retro-text">Say goodbye to petrol, diesel, and high maintenance—EVs have fewer moving parts, meaning less hassle and more savings!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="electric-image">
+                            <img src="https://via.placeholder.com/500x300" alt="Electric Car" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="pixel-border">
+                <h2 class="text-center neon-text mb-4">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <p class="retro-text">📞 0191 460 9444</p>
+                            <p class="retro-text">⏰ Mon-Fri 9am-5:30pm</p>
+                            <p class="retro-text">📧 sales@lingscars.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="retro-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control retro-input" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control retro-input" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control retro-input" rows="3" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="retro-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container text-center">
+            <div class="pixel-border">
+                <h3 class="neon-text">Lings Retro Cars</h3>
+                <p class="retro-text">Your Retro Car Leasing Destination</p>
+                <div class="social-links">
+                    <a href="#" class="neon-text me-3">Twitter</a>
+                    <a href="#" class="neon-text me-3">Facebook</a>
+                    <a href="#" class="neon-text">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chat-toggle">
+            <span>💬</span>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <span>Chat with us</span>
+                <button class="close-chat">×</button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    Hello! How can I help you today? 😊
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type a message...">
+                <button class="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="lings-script.js"></script>
+</body>
+</html> 

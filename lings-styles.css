@@ -1,0 +1,322 @@
+/* Base Styles */
+:root {
+    --neon-pink: #ff00de;
+    --neon-green: #00ff00;
+    --dark-bg: #000000;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid var(--neon-pink);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--dark-bg);
+    position: relative;
+    background-image: url('img.jpg');
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid var(--neon-pink);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    color: var(--neon-pink);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
+/* Deal Cards */
+.deals-section {
+    padding: 80px 20px;
+}
+
+.deal-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid var(--neon-pink);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.deal-card:hover {
+    transform: translateY(-5px);
+}
+
+.deal-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid var(--neon-green);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Electric Section */
+.electric-section {
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.electric-image img {
+    border: 2px solid var(--neon-green);
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-control {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid var(--neon-pink);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-family: 'VT323', monospace;
+}
+
+.form-control:focus {
+    border-color: var(--neon-green);
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px 20px;
+    border-top: 2px solid var(--neon-pink);
+}
+
+/* Buttons */
+.retro-btn {
+    background: var(--dark-bg);
+    border: 2px solid var(--neon-pink);
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.retro-btn:hover {
+    background: var(--neon-pink);
+    color: var(--dark-bg);
+}
+
+/* Chatbot Styles */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-toggle {
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border: 2px solid #ff00de;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px #ff00de;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-size: 24px;
+    padding: 0;
+}
+
+.chat-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #ff00de;
+}
+
+.chat-box {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #ff00de;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff00de;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-box.active {
+    display: flex;
+}
+
+.chat-header {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #ff00de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ff00de;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: #ff00de;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background: rgba(255, 0, 222, 0.1);
+    border: 1px solid #ff00de;
+    color: #fff;
+}
+
+.message.user {
+    align-self: flex-end;
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+    color: #fff;
+}
+
+.chat-input {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #ff00de;
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ff00de;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+}
+
+.chat-input input:focus {
+    outline: none;
+    border-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.send-message {
+    padding: 8px 15px;
+    background: #ff00de;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-message:hover {
+    background: #00ff00;
+}
+
+/* Scrollbar Styling */
+.chat-messages::-webkit-scrollbar {
+    width: 5px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #ff00de;
+    border-radius: 5px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #00ff00;
+}
+
+/* Responsive Design for Chatbot */
+@media (max-width: 768px) {
+    .chat-box {
+        width: 280px;
+        height: 350px;
+    }
+    
+    .chat-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+} 
